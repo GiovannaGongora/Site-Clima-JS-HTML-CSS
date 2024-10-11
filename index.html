@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang "pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>CLIMA</title>
+    </head>
+    <body>
+      <div id="container">
+            <form id="search">
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/place-marker.png" alt="place-marker"/>
+                <input 
+                    type="search" 
+                    name="cityname"
+                    id="cityname" 
+                    placeholder="Buscar Cidade"
+                >
+                <button type="submit">
+                    <img width="24" height="24" src="https://img.icons8.com/forma-regular/24/search.png" alt="search"/>
+                </button>
+            </form>
+
+            <div id="weather" >
+                <h1 id="title">São Paulo - SP</h1>
+                
+                <div id="infos">
+                    <div id="temp">
+                        <img id="tempimage" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+                        <div>
+                            <p id="tempvalue">
+                                32 <sup>C</sup>
+                            </p>
+                            <p id="temp_des">
+                                Nublado
+                            </p>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="infos2">
+                    <div class="info">
+                        <i id="tempmaxicon" class="fa-solid fa-temperature-arrow-up"></i>
+                     
+                     <div>
+
+                        <h2> Temp Max </h2>  
+                        <p id="tempmax">
+                                 32 <sup>C</sup>
+            
+                         </p>  
+                     </div>
+                    </div>
+
+                  
+                    <div class="info">
+                        <i id="tempminicon" class="fa-solid fa-temperature-arrow-down"></i>
+                    
+                    <div>
+                        <h2>Temp Min</h2>  
+                        <p id="tempmin">
+                            32 <sup>C</sup>
+                        </p> 
+                    </div> 
+                  </div> 
+                
+                
+                  
+                    <div class="info">
+                        <i id="humidade" class="fa-solid fa-cloud-showers-water"></i>
+                    <div>
+                        <h2>Humidade</h2>  
+                        <p id="humida">
+                        30%
+                        </p>  
+                    </div>
+                 </div>
+                
+                
+       
+                    <div class="info">
+                        <i id="ventoicon" class="fa-solid fa-wind"></i>
+
+                    
+                    <div>
+                        <h2>Vento</h2>  
+                        <p id="vento">
+                            30 km/h
+                        </p>  
+                    </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+            
+            <div id="alert">
+
+            </div>
+      </div>        
+        <script src="./javascript/script.js" async defer></script>
+    </body>
+</html>
